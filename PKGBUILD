@@ -1,5 +1,4 @@
-# Maintainer: m
-
+# Maintainer: MicLeh <micleh at proton dot me>
 pkgname=doublecmd-qt6-bin
 _pkgname=doublecmd
 pkgver=1.2.8
