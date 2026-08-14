@@ -7,6 +7,7 @@ pkgdesc="Twin-panel (commander-style) file manager (Qt6, prebuilt binary)"
 arch=('x86_64')
 url="https://doublecmd.sourceforge.io/"
 license=('GPL-2.0-or-later' 'LGPL-2.0-or-later' 'MIT' 'MPL-1.1' 'MPL-2.0' 'Apache-2.0' 'BSD-2-Clause' 'Zlib')
+options=('!strip' '!debug')
 depends=(
     'qt6-base'
     'libb2'
@@ -46,7 +47,7 @@ optdepends=(
     'mplayer: to make use of the wlxmplayer plugin'
 )
 provides=("$_pkgname")
-replaces=('doublecmd-qt' 'doublecmd-qt4' 'doublecmd-gtk2')
+replaces=('doublecmd-qt' 'doublecmd-qt4' 'doublecmd-gtk' 'doublecmd-gtk2')
 conflicts=('doublecmd-qt5' 'doublecmd-gtk' 'doublecmd-gtk2')
 source=(
     "https://github.com/${_pkgname}/${_pkgname}/releases/download/v${pkgver}/${_pkgname}-${pkgver}.qt6.x86_64.tar.xz"
